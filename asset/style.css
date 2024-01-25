@@ -79,8 +79,12 @@ a, ul {
 .title{
     font-weight: 700;
 }
-.subtitle{
+.sub-title{
     font-weight: 600;
+    color:var(--Dark-03);
+    font-size: 20px;
+
+   
 }
 .description{
     color: var(--Dark-03);
@@ -241,10 +245,10 @@ header{
         margin: 40px auto;
     }
 
-    .banner-description{
+    .banner-description, .features img{
         width:100%;
     }
-    .main-nav, .teams-container{
+    .main-nav, .teams-container, .features{
         flex-direction: column;
     }
     .teams-img-container{
@@ -261,6 +265,10 @@ header{
     .sponsors-img img {
 
         margin: 10px 20px;
+    }
+    .features-img  .experience{
+        padding: 10px;
+        position: static;
     }
 }
 
@@ -301,8 +309,16 @@ header{
             font-size: 18px;
             padding: 18px 22px;
         }
-        .teams-container{
+        .teams-container, .features{
             flex-direction: column;
             padding:0px;
+        }
+        .features-img .experience{
+            left: 100px;
+            bottom: 200px;
+            width: 50%;
+        }
+        .features-img{
+            text-align: center;
         }
 }
